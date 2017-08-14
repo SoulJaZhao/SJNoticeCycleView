@@ -7,6 +7,7 @@
 //
 
 #import "SJViewController.h"
+#import <SJNoticeCycleView/SJNoticeCycleView.h>
 
 @interface SJViewController ()
 
@@ -17,7 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *notices = @[
+                            @"test1",
+                            @"test2",
+                            @"test3"
+                         ];
+    
+    SJNoticeCycleView *cycleView = [[SJNoticeCycleView alloc] initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 30) TitleImage:[UIImage imageNamed:@"notice"] NoticeList:notices];
+    
+    [self.view addSubview:cycleView];
 }
 
 - (void)didReceiveMemoryWarning

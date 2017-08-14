@@ -1,0 +1,16 @@
+PODS:
+  - SJNoticeCycleView (0.1.0)
+
+DEPENDENCIES:
+  - SJNoticeCycleView (from `../`)
+
+EXTERNAL SOURCES:
+  SJNoticeCycleView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SJNoticeCycleView: b09db5c92fe63209741a70370e4c185cf58f9aa2
+
+PODFILE CHECKSUM: 5a4aacaa507033ec0c89c00feaea9dd764a985fa
+
+COCOAPODS: 1.2.1

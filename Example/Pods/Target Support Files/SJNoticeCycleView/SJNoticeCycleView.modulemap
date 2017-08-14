@@ -1,0 +1,6 @@
+framework module SJNoticeCycleView {
+  umbrella header "SJNoticeCycleView-umbrella.h"
+
+  export *
+  module * { export * }
+}

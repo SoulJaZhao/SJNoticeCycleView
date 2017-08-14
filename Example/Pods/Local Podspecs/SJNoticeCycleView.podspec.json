@@ -1,0 +1,22 @@
+{
+  "name": "SJNoticeCycleView",
+  "version": "0.1.0",
+  "summary": "A short description of SJNoticeCycleView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhaolong01/SJNoticeCycleView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhaolong01": "zhaolong01@shengpay.com"
+  },
+  "source": {
+    "git": "https://github.com/zhaolong01/SJNoticeCycleView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SJNoticeCycleView/Classes/**/*"
+}

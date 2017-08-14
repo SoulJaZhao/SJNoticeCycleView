@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SJNoticeCycleView_Example' do
+  pod 'SJNoticeCycleView', :path => '../'
+
+  target 'SJNoticeCycleView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

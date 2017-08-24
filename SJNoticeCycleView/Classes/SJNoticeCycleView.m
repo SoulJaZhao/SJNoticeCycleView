@@ -34,7 +34,7 @@ UITableViewDelegate
     self = [super initWithFrame:frame];
     if (self) {
         //添加tableView
-        _tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         [_tableView setDataSource:self];
         [_tableView setDelegate:self];
         _tableView.estimatedRowHeight = frame.size.height;
@@ -130,7 +130,14 @@ UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([_delegate respondsToSelector:@selector(noticeCycleView:didSelectNoticeAtIndex:)]) {
-        [_delegate noticeCycleView:self didSelectNoticeAtIndex:indexPath.row];
+        //点击最后一个notice
+        if (indexPath.row == _notices.count - 1) {
+            [_delegate noticeCycleView:self didSelectNoticeAtIndex:0];
+        }
+        //其他情况
+        else {
+            [_delegate noticeCycleView:self didSelectNoticeAtIndex:indexPath.row];
+        }
     }
 }
 
